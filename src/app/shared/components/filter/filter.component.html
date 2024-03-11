@@ -1,0 +1,16 @@
+<form class="filter" [formGroup]="filter">
+  <input formControlName="search" class="input-elevated" type="search" placeholder="Search">
+  <mat-form-field>
+    <mat-label>Enter a date range</mat-label>
+    <mat-date-range-input [rangePicker]="picker">
+      <input matStartDate placeholder="Start year" formControlName="start">
+      <input matEndDate placeholder="End year" formControlName="end">
+    </mat-date-range-input>
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-date-range-picker #picker
+                           startView="multi-year"
+                           (yearSelected)="setYear($event)"
+    ></mat-date-range-picker>
+  </mat-form-field>
+</form>
+

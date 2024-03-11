@@ -1,0 +1,16 @@
+<div class="app-pagination">
+  <div (click)="prevPage()" class="pagination-arrow" id="prev">&#8249;</div>
+  <div class="pagination-numbers">
+    @for (pageNumber of getPageNumbers(); track pageNumber) {
+      <span
+        class="pagination-number"
+        [class.active]="pageNumber === currentPage"
+        (click)="goToPage(pageNumber)"
+      >
+      {{ pageNumber }}
+    </span>
+    }
+
+  </div>
+  <div (click)="nextPage()" class="pagination-arrow" id="next">&#8250;</div>
+</div>

@@ -1,0 +1,41 @@
+.card {
+  width: 21rem;
+  margin-right: 1rem;
+  position: relative;
+  cursor: pointer;
+  height: 511px;
+  margin-bottom: 1rem;
+
+  &-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &-btn {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.8;
+    padding: 0.5rem;
+    transition: opacity 0.3s;
+  }
+
+  &:hover {
+    .card-btn {
+      height: 200px;
+      overflow: auto;
+    }
+  }
+}
+
+.release-year,
+.description {
+  display: none;
+}
+
+.card:hover .release-year,
+.card:hover .description {
+  display: block;
+}
+

@@ -1,0 +1,22 @@
+.mat-mdc-button {
+  display: none !important;
+}
+
+.mat-calendar-header {
+  display: flex;
+  justify-content: center;
+}
+
+.mat-mdc-text-field-wrapper {
+  border-radius: 50px !important;
+}
+
+.mat-mdc-icon-button svg {
+  color: red;
+}
+
+.mat-mdc-form-field {
+  width: 400px;
+  flex-direction: row !important;
+}
+

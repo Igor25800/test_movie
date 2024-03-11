@@ -1,0 +1,62 @@
+@import "../../../../assets/style/variables/colors";
+
+
+.header {
+  background-color: $black;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &-logo {
+    margin-left: 5rem;
+    cursor: pointer;
+    display: flex;
+
+    .movies {
+      margin-left: 5rem;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 25px;
+
+      .card {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 200px;
+      }
+    }
+  }
+
+  &-right {
+    display: flex;
+    height: 30px;
+    margin-right: 5rem;
+
+    &__btn {
+      width: 10rem;
+      background-color: $red;
+      border-radius: 50px;
+      border: 1px solid $red;
+      color: $white;
+    }
+
+    &__text {
+      color: $white;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.hr {
+  border-left: 1px solid $white;
+  margin: 0 10px 0 10px;
+}
+
+.active {
+  background-color: $red;
+  padding: 1rem;
+}

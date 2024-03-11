@@ -1,0 +1,26 @@
+<div class="header">
+  <div class="header-logo">
+    <img src="assets/img/logo.png" alt="" (click)="navigateHome()">
+    @if (activeRouteName !== 'home') {
+      <div class="movies">
+        <div [class.active]="activeRouteName === 'movies'" class="card active" (click)="navigate('movies')">
+          <img src="assets/img/icon-movies.png" alt="">
+          <div>Movies</div>
+        </div>
+        <div [class.active]="activeRouteName === 'series'" class="card" (click)="navigate('series')">
+          <img src="assets/img/icon-series.png" alt="">
+          <div>Series</div>
+        </div>
+      </div>
+    }
+  </div>
+  <div class="header-right">
+    <div class="hr"></div>
+    <div class="header-right__text">
+      Login
+      <img class="ml-1" src="assets/img/icon-login.png" alt="">
+    </div>
+    <div class="hr"></div>
+    <button class="header-right__btn">Start your free trial</button>
+  </div>
+</div>

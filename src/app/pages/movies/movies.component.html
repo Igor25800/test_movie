@@ -1,0 +1,18 @@
+<app-filter (eventFilter)="eventFilter($event)" />
+<div class="movies">
+  <h1>Popular {{ nameType | titlecase }}</h1>
+  <div class="movies-parent">
+    @if (!arrayMovies.length) {
+      <p class="error">Фільм не найдено</p>
+    }
+    @for (item of arrayMovies; track item) {
+      <app-card [card]="item"/>
+    }
+  </div>
+  @if (arrayPageMovies.length) {
+    <app-pagination
+      [movies]="arrayPageMovies"
+      (pageChanged)="onPageChanged($event)"
+    />
+  }
+</div>

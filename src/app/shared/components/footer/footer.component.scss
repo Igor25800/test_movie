@@ -1,0 +1,14 @@
+.footer {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &-block {
+    margin-bottom: 5rem;
+
+    .width {
+      width: 100%;
+    }
+  }
+}

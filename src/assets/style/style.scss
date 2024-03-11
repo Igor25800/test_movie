@@ -1,0 +1,23 @@
+@import "../style/material/material";
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  max-height: 60px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #424242;
+}
+
+body {
+  background-color: black;
+  color: white;
+}

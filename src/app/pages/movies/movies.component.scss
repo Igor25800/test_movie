@@ -1,0 +1,19 @@
+.movies {
+  padding: 1rem;
+  margin-left: 5rem;
+
+  &-parent {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  .error {
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    height: 20rem;
+  }
+}
+

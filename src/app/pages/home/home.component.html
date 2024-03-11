@@ -1,0 +1,11 @@
+<div class="home">
+  @for (type of array; track type.name ) {
+    <div class="card" (click)="navigateType(type.name)">
+      <img class="card-img" [src]="type.img" alt="">
+      <div class="card-btn">
+        {{type.name}}
+      </div>
+    </div>
+  }
+</div>
+
